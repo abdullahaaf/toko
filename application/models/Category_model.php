@@ -18,6 +18,11 @@ class Category_model extends CI_Model
 		return $hsl;
 	}
 
+	function tampil_kategori_by_id($id){
+		$hsl=$this->db->query("select * from tbl_kategori where kategori_id ='$id'");
+		return $hsl;
+	}
+
 	function simpan_kategori($kat){
 		$hsl=$this->db->query("INSERT INTO tbl_kategori(kategori_nama) VALUES ('$kat')");
 		return $hsl;

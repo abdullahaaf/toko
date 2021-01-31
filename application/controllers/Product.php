@@ -10,11 +10,6 @@ class Product extends CI_Controller
 		$this->load->model('Product_model');
 		$this->load->model('Category_model');
 		$this->load->model('Rak_model');
-		/*
-		
-
-		
-		*/
 	}
 
 	public function index()

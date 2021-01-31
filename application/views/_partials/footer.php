@@ -15,7 +15,7 @@ foreach($grafik as $data){
  
 <footer class="main-footer">
     <div class="float-right d-none d-sm-inline">
-        Sistem Informasi Penjualan
+        Sistem Manajemen Toko Jamu AA
     </div>
     <strong>Copyright © 2014-2019 <a href="<?php echo base_url('/'); ?>">SIP Online</a>.</strong> All rights reserved.
 </footer>
