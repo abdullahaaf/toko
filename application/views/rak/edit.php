@@ -8,12 +8,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Edit Kategori</h1>
+                    <h1 class="m-0 text-dark">Edit Rak</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Category</li>
+                        <li class="breadcrumb-item active">Rak</li>
                     </ol>
                 </div>
             </div>
@@ -27,32 +27,32 @@
             <?php echo validation_errors(); ?>
         </div>
 
-            <?php echo form_open('Category/update');?>
-                <?php foreach($category->result_array() as $c ){ ?>
+            <?php echo form_open('Rak/update');?>
+                <?php foreach($rak->result_array() as $r ){ ?>
                 <div class="card">
-                    <div class="card-header">Form Edit Kategori</div>
+                    <div class="card-header">Form Edit Rak</div>
                     <div class="card-body">
-                        <?php echo form_hidden('kategori_id', $c['kategori_id']);?>
+                        <?php echo form_hidden('rak_id', $r['rak_id']);?>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <?php
-                                        echo form_label('Nama Kategori');
-                                        $kategori_nama = [
+                                        echo form_label('Nama Rak');
+                                        $rak_nama = [
                                             'type'  => 'text',
-                                            'name'  => 'kategori_nama',
-                                            'id'    => 'kategori_nama',
-                                            'value' => $c['kategori_nama'],
+                                            'name'  => 'rak_nama',
+                                            'id'    => 'rak_nama',
+                                            'value' => $r['rak_nama'],
                                             'class' => 'form-control'
                                         ];
-                                        echo form_input($kategori_nama);
+                                        echo form_input($rak_nama);
                                     ?>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card-footer">
-                        <a href="<?php echo base_url('Category'); ?>" class="btn btn-outline-info">Back</a>
+                        <a href="<?php echo base_url('Rak'); ?>" class="btn btn-outline-info">Back</a>
                         <button type="submit" class="btn btn-primary float-right">Simpan</button>
                     </div>
                 </div>

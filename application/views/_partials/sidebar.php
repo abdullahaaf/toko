@@ -25,13 +25,19 @@
                 <li class="nav-item">
                     <a href="<?php echo base_url('category'); ?>" class="nav-link">
                         <i class="nav-icon fas fa-tags"></i>
-                        <p>Manajement Category</p>
+                        <p>Manajemen Kategori</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?php echo base_url('rak'); ?>" class="nav-link">
+                        <i class="nav-icon fas fa-grip-horizontal"></i>
+                        <p>Manajemen Rak</p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="<?php echo base_url('product'); ?>" class="nav-link">
                         <i class="nav-icon fas fa-cart-plus"></i>
-                        <p>Manajement Product</p>
+                        <p>Manajemen Produk</p>
                     </a>
                 </li>
                 <li class="nav-item">

@@ -18,6 +18,11 @@ class Rak_model extends CI_Model
 		return $hsl;
 	}
 
+	function tampil_rak_by_id($id){
+		$hsl=$this->db->query("select * from tbl_rak where rak_id = '$id'");
+		return $hsl;
+	}
+
 	function simpan_rak($rak){
 		$hsl=$this->db->query("INSERT INTO tbl_rak(rak_nama) VALUES ('$rak')");
 		return $hsl;
